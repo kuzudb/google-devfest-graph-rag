@@ -1,0 +1,17 @@
+[project]
+name = "graph-rag-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ell-ai[sqlite]==0.0.15",
+    "kuzu==0.7.0",
+    "lancedb==0.16.0",
+    "llama-index-embeddings-openai~=0.3.0",
+    "llama-index==0.12.2",
+    "python-dotenv==1.0.1",
+    "llama-index-vector-stores-lancedb~=0.3.0",
+    "llama-index-graph-stores-kuzu~=0.6.0",
+    "cohere~=5.11.0",
+]
