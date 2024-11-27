@@ -129,8 +129,7 @@ for founder in additional_founders:
         """
         MATCH (o:ORGANIZATION {id: "BlackRock"})
         MERGE (p:PERSON {id: $name, name: $name})
-        MERGE (p)-[r:LINKS]->(o)
-        SET r.label = "IS_FOUNDER_OF"
+        MERGE (p)-[r:IS_FOUNDER_OF]->(o)
         """,
         parameters={"name": founder},
     )
